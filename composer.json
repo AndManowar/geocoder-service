@@ -1,0 +1,33 @@
+{
+    "repositories": [
+        {
+            "type": "vcs",
+            "url":  "git@git.topnlab.ru:topnlab/services-stl.git"
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "topnlab/phalcon-base",
+                "version": "0.1.0",
+                "type": "package",
+                "source": {
+                    "url": "git@git.topnlab.ru:topnlab/phalcon-topnlab-base.git",
+                    "type": "git",
+                    "reference": "master"
+                },
+                "autoload": {
+                    "psr-4": {"Topnlab\\PhalconBase\\": "src/"}
+                }
+            }
+        }
+    ],
+    "require": {
+        "php": ">=7.1",
+        "topnlab/services-stl": "dev-master",
+        "topnlab/phalcon-base": "*",
+        "robmorgan/phinx": "^0.9.2"
+    },
+    "require-dev": {
+        "codeception/codeception": "^2.4"
+    }
+}
